@@ -9,7 +9,7 @@ echo "deb [arch=amd64 signed-by=/usr/share/keyrings/bazel-archive-keyring.gpg] h
 sudo apt update
 sudo apt install bazel
 
-git clone --recurse-submodules git@github.com:Mars-Cat2023/OpenLLM-XLS.git good
-cd ./good/Google-XLS
+git clone --recurse-submodules git@github.com:Mars-Cat2023/OpenLLM-XLS.git
+cd ./OpenLLM-XLS/Google-XLS
 bazel build -c opt xls/...
 cd ..
